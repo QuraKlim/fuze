@@ -1,0 +1,137 @@
+.content {
+  padding: 120px 0 300px 0;
+}
+
+.search {
+  box-shadow: 0px 7px 12px 0px #64646f33;
+  border: none;
+  display: block;
+  padding: 20px 36px;
+  width: 100%;
+  &::placeholder {
+    color: var(--sec-color);
+    font-size: var(--regular-text-font);
+    line-height: var(--regular-text-font);
+  }
+  &:focus-visible {
+    outline: none;
+    box-shadow: 0px 7px 12px 0px var(--sec-color);
+  }
+}
+
+.search_wrapper {
+  width: 626px;
+  margin: 0 auto;
+}
+
+.clear_button {
+  padding: 10px 20px;
+  justify-self: flex-end !important;
+  background-color: white;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s linear;
+  &:hover {
+    background-color: var(--sec-color);
+  }
+}
+
+.input_footer {
+  padding: 0 20px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.loader {
+  width: 150px;
+  height: 140px;
+  animation: spinning 2s linear infinite;
+  display: block;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+.jokes {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 20px;
+  margin-top: 60px;
+}
+
+.joke {
+  grid-column: span 2;
+  color: inherit;
+  text-decoration: none;
+  height: calc(100% - 50px);
+  padding: 30px 30px 20px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 50px;
+  background-color: white;
+  box-shadow: 0px 7px 12px 0px #64646f33;
+  height: 100%;
+  & > p {
+    overflow-wrap: anywhere;
+  }
+}
+
+.joke:nth-child(1),
+.joke:nth-child(2) {
+  grid-column: span 3;
+  min-height: 260px;
+}
+
+.joke_footer {
+  display: flex;
+  justify-content: space-between;
+  gap: 25px;
+  font-family: "Montserrat";
+  flex-wrap: wrap;
+}
+
+@keyframes spinning {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(-360deg);
+  }
+}
+
+@media (max-width: 991px) {
+  .joke {
+    grid-column: span 3;
+  }
+  .clear_button {
+    background-color: var(--sec-color);
+  }
+  .content {
+    padding: 80px 0 200px 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .search_wrapper {
+    width: 100%;
+  }
+  .jokes {
+    grid-template-columns: 1fr;
+    margin-top: 30px;
+  }
+  .joke:nth-child(1),
+  .joke:nth-child(2) {
+    min-height: unset;
+  }
+  .joke {
+    padding: 20px 20px 15px 20px;
+    height: auto;
+  }
+  .content {
+    padding: 50px 0 100px 0;
+  }
+}

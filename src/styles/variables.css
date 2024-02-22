@@ -1,0 +1,24 @@
+:root {
+  --regular-text-font: 20px;
+  --smaller-text-font: 16px;
+  --little-text-font: 14px;
+  --text-color: #282626;
+  --light-text-color: #767676;
+  --sec-color: #656ec2;
+}
+
+@media (max-width: 991px) {
+  :root {
+    --regular-text-font: 18px;
+    --smaller-text-font: 14px;
+    --little-text-font: 12px;
+  }
+}
+
+@media (max-width: 425px) {
+  :root {
+    --regular-text-font: 16px;
+    --smaller-text-font: 12px;
+    --little-text-font: 10px;
+  }
+}

@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Fira Sans";
+  font-size: var(--regular-text-font);
+  color: var(--text-color);
+  font-style: normal;
+  font-weight: 400;
+  font-size: var(--regular-text-font);
+}
+
+.bold-text {
+  font-weight: 700;
+}
+
+.light-text: {
+  color: var(--light-text-color);
+}
+
+.regular-text {
+  font-size: var(--regular-text-font);
+}
+
+.smaller-text {
+  font-size: var(--smaller-text-font);
+}
+
+.little-text {
+  font-size: var(--little-text-font);
+}
+
+.container {
+  max-width: 1640px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.hidden {
+  display: none;
+}
+
+@media (max-width: 425px) {
+  .container {
+    padding: 0 10px;
+  }
+}
