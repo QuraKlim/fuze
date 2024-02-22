@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/QuraKlim/fuze/static/css/main.6cdf85d2.css",
+    "main.js": "/QuraKlim/fuze/static/js/main.47c20c25.js",
+    "static/media/approved.png": "/QuraKlim/fuze/static/media/approved.d2f630599b6c34651a80.png",
+    "static/media/montserrat_regular.woff2": "/QuraKlim/fuze/static/media/montserrat_regular.8b56391ed36ea95337c6.woff2",
+    "static/media/firasans_bold.woff2": "/QuraKlim/fuze/static/media/firasans_bold.42cd6eeab50d0fc85206.woff2",
+    "static/media/firasans_regular.woff2": "/QuraKlim/fuze/static/media/firasans_regular.23606814c407297a288b.woff2",
+    "index.html": "/QuraKlim/fuze/index.html",
+    "main.6cdf85d2.css.map": "/QuraKlim/fuze/static/css/main.6cdf85d2.css.map",
+    "main.47c20c25.js.map": "/QuraKlim/fuze/static/js/main.47c20c25.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6cdf85d2.css",
+    "static/js/main.47c20c25.js"
+  ]
+}
